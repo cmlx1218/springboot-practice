@@ -2,15 +2,21 @@ server:
   port: 8085
 spring:
   datasource:
-    url: 39.96.178.201:3306
+    url: jdbc:mysql://39.96.178.201:3306/practice_springboot?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
 
 
 mybatis:
-  # mapper.xml位置
-  config-location: mapper/*/*Mapper.xml
-  # 实体位置
+  # mapper.xml鏂囦欢浣嶇疆
+  mapper-location: "classpath:mapper/*.xml"
+  # dto瀹炰綋浣嶇疆
   type-aliases-package: com.cmlx.transaction.*.pojo.dto
