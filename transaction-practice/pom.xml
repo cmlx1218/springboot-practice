@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cmlx</groupId>
-    <artifactId>translation-practice</artifactId>
+    <artifactId>transaction-practice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>translation-practice</name>
+    <name>transaction-practice</name>
     <description>Demo project for Spring Boot</description>
 
 

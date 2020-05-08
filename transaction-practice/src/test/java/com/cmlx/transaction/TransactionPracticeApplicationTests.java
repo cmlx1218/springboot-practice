@@ -1,10 +1,10 @@
-package com.cmlx.translationpractice;
+package com.cmlx.transaction;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TranslationPracticeApplicationTests {
+class TransactionPracticeApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,21 +1,16 @@
 server:
   port: 8085
-
-
 spring:
   datasource:
-    url: 39.96.178.201
+    url: 39.96.178.201:3306
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-#  jpa:
-#    show-sql: true
+
 
 mybatis:
-  # mapper文件位置
+  # mapper.xml位置
   config-location: mapper/*/*Mapper.xml
-  # 实体类位置
-  type-aliases-package: com.cmlx.translationpractice.*.pojo.dto
-
-
+  # 实体位置
+  type-aliases-package: com.cmlx.transaction.*.pojo.dto
