@@ -17,6 +17,7 @@
         <version.mysql>8.0.19</version.mysql>
         <version.druid>1.1.20</version.druid>
         <version.springboot.mybatis>2.1.2</version.springboot.mybatis>
+        <version.zookeeper>3.4.14</version.zookeeper>
     </properties>
 
     <dependencies>
@@ -25,6 +26,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${version.springboot}</version>
             <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>${version.springboot}</version>
         </dependency>
 
         <dependency>
@@ -61,6 +68,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
             <version>${version.springboot}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${version.zookeeper}</version>
         </dependency>
 
 
