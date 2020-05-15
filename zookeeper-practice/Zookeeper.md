@@ -7,7 +7,7 @@
 
 #### 1、文件系统
 &emsp;Zookeeper维护一个类似文件系统的数据结构：
-
+![image](https://github.com/cmlx1218/springboot-practice/blob/master/zookeeper-practice/src/main/resources/images/zookeeper-01.png)
 &emsp;每个子目录都被称作znode（目录节点），和文件系统一样，我们可以自由的增删znode，在一个znode下增删子znode，可以存储数据。
 * PERSISTENT-持久化目录节点：客户端与Zookeeper断开连接后，该节点依旧存在
 * PERSISTENT_SEQUENTIAL-持久化顺序编号目录节点：断开连接后，该节点依旧存在，只是Zookeeper给该节点名称进行顺序编号
