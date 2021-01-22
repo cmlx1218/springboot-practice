@@ -1,0 +1,12 @@
+server:
+  port: 7911
+
+spring:
+  application:
+    name: springboot_redis
+
+  redis:
+    packagesToScan: "com.cmlx.redis"
+    host: 39.96.178.201
+    database: 0
+    port: 6379
